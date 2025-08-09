@@ -6,6 +6,7 @@
 
 | Entry🛠️ | Intermediate🧑‍🏫 | Expert🚀 |
 | :---: | :---: | :---: |
-| CompTIA A+ | CompTIA CySA+ | CISSP (Certified Information Systems Security Professional) |
+| CompTIA A+ | CompTIA CySA+ | Certified Information Systems Security Professional (CISSP) |
 | CompTIA Network+ | CompTIA PenTest+ | Global Information Assurance Certification (GIAC) |
-| ✅ | Certified Ethical Hacker (CEH)| Offensive Security Certified Professional (OSCP)|
+| Cisco Certified Network Associate (CCNA) | Cisco Certified Network Professional (CCNP)| Offensive Security Certified Professional (OSCP)|
+| ✅ | Certified Ethical Hacker (CEH)| - |
