@@ -3,14 +3,9 @@
 * Master Degrees
 
 # 🏆| Certifications
-## Entry🛠️
-* CompTIA A+
-* CompTIA Network+
-## Intermediate🧑‍🏫
-* CompTIA CySA+
-* CompTIA PenTest+
-* Certified Ethical Hacker (CEH)
-## Expert🚀
-* CISSP (Certified Information Systems Security Professional)
-* Global Information Assurance Certification (GIAC)
-* Offensive Security Certified Professional (OSCP)
+
+| Entry🛠️ | Intermediate🧑‍🏫 | Expert🚀 |
+| :---: | :---: | :---: |
+| CompTIA A+ | CompTIA CySA+ | CISSP (Certified Information Systems Security Professional) |
+| CompTIA Network+ | CompTIA PenTest+ | Global Information Assurance Certification (GIAC) |
+| - | Certified Ethical Hacker (CEH)| Offensive Security Certified Professional (OSCP)|
