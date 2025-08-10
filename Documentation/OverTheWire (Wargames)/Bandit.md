@@ -136,7 +136,7 @@ Inside this directory, you'll find many subdirectories, making it impractical to
 
 Here is the command you'll use:
 
-find . -type f -size 1033c ! -executable
+find . -type f -size 1033c ! -executable -exec file --mime {} + | grep 'text'
 
 This command searches the current directory and all subdirectories for a regular file (-type f) that is exactly 1033 bytes in size (-size 1033c) and is not executable (! -executable).
 
@@ -150,90 +150,167 @@ cat ./maybehere07/.file2
 <details> <summary>Answer</summary> HWasnPhtq9AVKe0dmk45nxy20cvUa6EG </details> 
 
 ## Level 6
-... some content ...
-<details> <summary>Answer</summary>  </details> 
+The password for Bandit 7 is located somewhere on the server and has these three properties: it's owned by user bandit7, owned by group bandit6, and is 33 bytes in size.
+
+Since the file isn't in your home directory, you'll need to search the entire file system. A good place to start is the root directory (/).
+
+Use the find command with the specified criteria to locate the file.
+
+find / -user bandit7 -group bandit6 -size 33c 2>/dev/null
+Here's a breakdown of the command:
+
+find /: This starts the search from the root directory (/) to scan the entire server.
+
+-user bandit7: This filters the search to only files owned by the user bandit7.
+
+-group bandit6: This filters the search to files owned by the group bandit6.
+
+-size 33c: This looks for files with an exact size of 33 bytes. The c stands for bytes.
+
+2>/dev/null: This is crucial. It redirects any standard error messages (like "Permission denied") to /dev/null, which is a special file that discards all data written to it. This cleans up your output, so you only see the result you're looking for.
+
+After running this command, you will see the full path to the file. Then, use the cat command with the file's path to get the password.
+
+This is what it looks like before adding the filter to deny error messages versus after:
+  
+<img width="975" height="615" alt="image" src="https://github.com/user-attachments/assets/ba40690c-0721-4495-8a08-7a7f6ad486fe" />
+
+<img width="975" height="87" alt="image" src="https://github.com/user-attachments/assets/7a1a7c85-fe3f-4ecf-a688-64796eaf87a2" />
+
+
+<details> <summary>Answer</summary> morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj </details> 
+
 ## Level 7
-... some content ...
-<details> <summary>Answer</summary>  </details> 
+The password for Bandit 8 is located in a file named data.txt and is next to the word millionth. The data.txt file is very large, so simply using cat will fill your screen with a lot of text, making it impossible to find the password manually.
+
+To solve this, we'll use a combination of two commands: cat and grep. We'll use cat to output the contents of data.txt and then "pipe" that output to grep, which will filter the text for the specific keyword "millionth".
+
+<img width="824" height="1249" alt="image" src="https://github.com/user-attachments/assets/ae558139-87bf-4d77-b544-4e3aa9c5b802" />
+
+The command you'll use is:
+
+cat data.txt | grep millionth
+Let's break that down:
+
+cat data.txt: This command reads the contents of data.txt.
+
+|: The pipe symbol takes the output from the command on the left and uses it as the input for the command on the right.
+
+grep millionth: This command searches for the line containing the word "millionth".
+
+Executing this command will display the single line containing the password, allowing you to easily find the credential for Bandit 8.
+
+<img width="764" height="75" alt="image" src="https://github.com/user-attachments/assets/029a27d8-a9f4-4fa8-bff5-1bcb346a226b" />
+
+<details> <summary>Answer</summary> dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc </details> 
+
 ## Level 8
 ... some content ...
 <details> <summary>Answer</summary>  </details> 
+
 ## Level 9
 ... some content ...
 <details> <summary>Answer</summary>  </details> 
+
 ## Level 10
 ... some content ...
 <details> <summary>Answer</summary>  </details> 
+
 ## Level 11
 ... some content ...
 <details> <summary>Answer</summary>  </details> 
+
 ## Level 12
 ... some content ...
 <details> <summary>Answer</summary>  </details> 
+
 ## Level 13
 ... some content ...
 <details> <summary>Answer</summary>  </details> 
+
 ## Level 14
 ... some content ...
 <details> <summary>Answer</summary>  </details> 
+
 ## Level 15
 ... some content ...
 <details> <summary>Answer</summary>  </details> 
+
 ## Level 16
 ... some content ...
 <details> <summary>Answer</summary>  </details> 
+
 ## Level 17
 ... some content ...
 <details> <summary>Answer</summary>  </details> 
+
 ## Level 18
 ... some content ...
 <details> <summary>Answer</summary>  </details> 
+
 ## Level 19
 ... some content ...
 <details> <summary>Answer</summary>  </details> 
+
 ## Level 20
 ... some content ...
 <details> <summary>Answer</summary>  </details> 
+
 ## Level 21
 ... some content ...
 <details> <summary>Answer</summary>  </details> 
+
 ## Level 22
 ... some content ...
 <details> <summary>Answer</summary>  </details> 
+
 ## Level 23
 ... some content ...
 <details> <summary>Answer</summary>  </details> 
+
 ## Level 24
 ... some content ...
 <details> <summary>Answer</summary>  </details> 
+
 ## Level 25
 ... some content ...
 <details> <summary>Answer</summary>  </details> 
+
 ## Level 26
 ... some content ...
 <details> <summary>Answer</summary>  </details> 
+
 ## Level 27
 ... some content ...
 <details> <summary>Answer</summary>  </details> 
+
 ## Level 28
 ... some content ...
 <details> <summary>Answer</summary>  </details> 
+
 ## Level 29
 ... some content ...
 <details> <summary>Answer</summary>  </details> 
+
 ## Level 30
 ... some content ...
 <details> <summary>Answer</summary>  </details> 
+
 ## Level 31
 ... some content ...
 <details> <summary>Answer</summary>  </details> 
+
 ## Level 32
 ... some content ...
 <details> <summary>Answer</summary>  </details> 
+
 ## Level 33
 ... some content ...
 <details> <summary>Answer</summary>  </details> 
+
 ## Level-34
 ... some content ...
 <details> <summary>Answer</summary>  </details> 
+
+
 
