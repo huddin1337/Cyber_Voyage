@@ -39,20 +39,73 @@ ___
 
 * What is the second flag you receive after successfully detecting sample2.exe?
 
+<img width="901" height="644" alt="image" src="https://github.com/user-attachments/assets/d5b4bdd7-653d-4785-bbbb-5b015fcc9afd" />
+
+We got new mail. Now we must find a way to detect and block this slightly modified version.
+
+<img width="587" height="818" alt="image" src="https://github.com/user-attachments/assets/e9c28106-fb64-4249-8058-203aeecd1f92" />
+
+I looked closely at the network activities for this malware and made an HTTP request to an IP address. The firewall rules are the best way to block any network traffic in this situation. In the firewall rule manager, I created a rule for denying any outbound traffic to that specific IP address.
+
+<img width="373" height="255" alt="image" src="https://github.com/user-attachments/assets/efb3d1c2-7907-4ef6-b26a-6248da6b09a5" />
+<img width="508" height="68" alt="image" src="https://github.com/user-attachments/assets/e7422e7e-03cf-4c23-887e-6c903e70d28c" />
+
+
 ---
 
 * What is the third flag you receive after successfully detecting sample3.exe?
+
+<img width="914" height="656" alt="image" src="https://github.com/user-attachments/assets/2fa74e92-fd32-4d65-8707-f488dd21f4f6" />
+
+<img width="1046" height="682" alt="image" src="https://github.com/user-attachments/assets/96e8e9d9-c020-4b70-9660-6f31b6f1078b" />
+
+<img width="765" height="424" alt="image" src="https://github.com/user-attachments/assets/d1839c33-4025-4ae5-958e-5da242412bf7" />
+
+
 
 ---
 
 * What is the fourth flag you receive after successfully detecting sample4.exe?
 
+<img width="596" height="606" alt="image" src="https://github.com/user-attachments/assets/5b532f38-e1e1-4caf-8985-0bcbd09d032b" />
+
+<img width="886" height="436" alt="image" src="https://github.com/user-attachments/assets/5e4b5926-d881-4f6b-9f46-a356462c4a29" />
+
+<img width="1009" height="143" alt="image" src="https://github.com/user-attachments/assets/69c1db43-f16f-48cd-b7ab-c7b9742ea4d3" />
+
+<img width="1009" height="118" alt="image" src="https://github.com/user-attachments/assets/df03947a-5bbe-4152-a1e5-488c9dbf76da" />
+
+<img width="613" height="371" alt="image" src="https://github.com/user-attachments/assets/3df21bd4-08ab-498f-b915-152a091834cb" />
+
 ---
 
 * What is the fifth flag you receive after successfully detecting sample5.exe?
 
+<img width="584" height="762" alt="image" src="https://github.com/user-attachments/assets/d340d5fd-e089-4dd8-8c50-cace5c6de22c" />
+
+<img width="725" height="727" alt="image" src="https://github.com/user-attachments/assets/cdb7e6e1-b9d9-4f02-9555-14c8b932f0d7" />
+
+<img width="812" height="826" alt="image" src="https://github.com/user-attachments/assets/0433479a-bf64-43dd-92ec-2c4e80a8b616" />
+
+<img width="896" height="177" alt="image" src="https://github.com/user-attachments/assets/d07450d4-1bc3-42d4-ac0b-5307a77c66e0" />
+
+<img width="899" height="345" alt="image" src="https://github.com/user-attachments/assets/6b883003-a0fd-4f26-b0c3-3e9325162bb0" />
+
+<img width="638" height="453" alt="image" src="https://github.com/user-attachments/assets/b57cac4c-2cc3-46eb-9472-c81e23e0521e" />
+
+
 ---
 
 * What is the final flag you receive from Sphinx?
+
+<img width="600" height="734" alt="image" src="https://github.com/user-attachments/assets/5f81a531-1c26-4614-867d-883a2c0a1980" />
+
+<img width="435" height="302" alt="image" src="https://github.com/user-attachments/assets/5530d924-d67b-441d-a144-4a6d7d5f3346" />
+
+<img width="898" height="234" alt="image" src="https://github.com/user-attachments/assets/48a79e3a-a37a-4a85-b200-95f3448d933b" />
+
+<img width="883" height="150" alt="image" src="https://github.com/user-attachments/assets/5e563562-5c48-4379-9ca7-ae2fb0bcc104" />
+
+<img width="786" height="439" alt="image" src="https://github.com/user-attachments/assets/420fe22d-1fcf-4a6d-b304-e50f5eb42406" />
 
 
