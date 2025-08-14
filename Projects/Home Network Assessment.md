@@ -1,0 +1,1 @@
+this file is going to be a walk-through of my personal home network assessment Journey
