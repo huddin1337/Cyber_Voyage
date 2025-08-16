@@ -1,1 +1,1 @@
-Yara (Loki)
+Yara (Loki) : YARA is great for creating and running rules to detect malware patterns by matching strings, byte sequences, or behaviors in files. LOKI is a lightweight scanner that uses YARA rules (plus hash and regex checks) to quickly hunt for indicators of compromise (IOCs) on a system. Together, they’re effective for threat hunting, malware detection, and incident response with minimal setup.
