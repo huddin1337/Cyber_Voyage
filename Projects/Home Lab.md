@@ -1,0 +1,38 @@
+* WebGoat
+* OWASP Juice Shop
+* OWASP Mutillidae ii
+* PentesterLab
+
+## Daily Practice
+* https://picoctf.org/
+* https://ctftime.org/
+* https://www.vulnhub.com/
+* https://ctflearn.com/
+
+## Security & Penetration Testing VM
+
+* Kali Linux – Preloaded with pentesting tools (run as VM or bare-metal).
+* Metasploitable 2 / DVWA (Damn Vulnerable Web App) – Intentionally vulnerable targets for practice.
+* GVM (Greenbone Vulnerability Manager) – Open-source vulnerability scanning.
+* OpenVAS – Vulnerability assessment and management.
+
+##  Network & Infrastructure
+* pfSense - Firewall and router software for segmentation and VPNs.
+* Pi-hole – Network-wide ad and tracker blocking.
+* WireGuard / OpenVPN – VPN services for secure remote access.
+
+
+## Virtualization & Container Platforms
+* Proxmox VE – Virtual machines + containers management.
+
+
+## Logging, SIEM & Analysis
+* ELK Stack (Elasticsearch, Logstash, Kibana) – Log aggregation and search.
+* Wazuh – Open-source SIEM and security monitoring.
+* Splunk Free – Log aggregation and search (limited free version).
+
+## File Sharing & Media
+* OpenMediaVault – Lightweight NAS solution.
+* Plex Media Server – Organize and stream media.
+* Jellyfin – Open-source alternative to Plex.
+  
