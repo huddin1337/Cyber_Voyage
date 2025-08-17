@@ -46,4 +46,12 @@ Unfortunately I forgot my password that originally came with the previous instal
 
 **sudo -E -u _gvm gvmd –user=admin –new-password=’new password’**
 
+Now that I'm successfully able to log on to green bone I will conduct a test on my home network to see if it runs properly. So I will follow these steps:
+* click on scans
+* then tasks located under scan
+* In tasks at the top left near the wand there's a square with a plus icon in the top right I'm going to click on that and hit new task
+* Where it says scan targets I'm going to hit the plus icon and add my IP address of another computer
+* After you're done you're gonna hit save and give it some time to run 
+
+
 
