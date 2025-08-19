@@ -1,4 +1,4 @@
-# SOC Analyst
+# SOC Analyst Career Plan
 My goal is to build the foundational knowledge and practical experience required to become a SOC Analyst. To achieve this, I will focus on developing strong technical skills in security monitoring, log analysis, and incident response while gaining hands-on experience with SIEM platforms, networking fundamentals, and operating system security. I will also practice documenting security incidents and communicating technical findings clearly. By mastering these skills, I will position myself to succeed as an entry-level SOC Analyst and grow toward advanced cybersecurity roles.
 
 ## SOC Analyst Skills Checklist
