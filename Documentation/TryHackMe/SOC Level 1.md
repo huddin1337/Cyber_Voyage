@@ -40,3 +40,46 @@ Recently, I enrolled in the TryHackMe SOC Level 1 room, which introduces core co
 
 ## Summary
 Together, these frameworks form the foundation of modern cyber defense. They help SOC analysts not only detect and respond to attacks but also anticipate how adversaries might adapt. From the Pyramid of Pain’s focus on attacker cost, to the tactical guidance of MITRE ATT&CK, these models give a structured way to defend networks, investigate incidents, and continuously improve security posture.
+
+# Cyber Threat Intelligence
+In the context of Cyber Threat Intelligence (CTI), there are several widely used tools and technologies that help analysts detect, analyze, and share threat information. Three of the most important are YARA, OpenCTI, and MISP.
+
+1. YARA
+
+* Known as the “pattern-matching Swiss knife” for malware research.
+
+* Used to identify and classify malware by creating rules based on textual or binary patterns.
+
+* Helps analysts detect known malware families, discover variants, and automate threat hunting.
+
+* Commonly integrated into SOC workflows for scanning files, memory, or network traffic.
+
+2. OpenCTI (Open Cyber Threat Intelligence Platform)
+
+* An open-source platform designed to manage, store, and share structured threat intelligence.
+
+* Supports integration with frameworks like MITRE ATT&CK, making it easier to link observed TTPs to real-world adversary behavior.
+
+* Allows collaboration between teams by providing a knowledge base of indicators, attack campaigns, and threat actor profiles.
+
+* Useful for building long-term intelligence analysis rather than just reactive detection.
+
+3. MISP (Malware Information Sharing Platform & Threat Sharing)
+
+* A community-driven platform for collecting, storing, and sharing Indicators of Compromise (IOCs) and threat intelligence.
+
+* Enables organizations to exchange actionable intelligence in structured formats (like STIX, OpenIOC, etc.).
+
+* Supports automation with feeds, correlation features, and sharing groups, making it valuable for collaborative defense.
+
+* Widely adopted by governments, SOCs, and CERT/CSIRTs for real-time intel exchange.
+
+## Summary
+
+* YARA helps with detection and classification of malware.
+
+* OpenCTI organizes and contextualizes threat intelligence for analysis.
+
+* MISP facilitates the sharing and exchange of intelligence across communities.
+
+Together, these tools strengthen CTI by covering detection, knowledge management, and collaboration — enabling defenders to stay ahead of evolving threats.
