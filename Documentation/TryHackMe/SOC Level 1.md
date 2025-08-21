@@ -1,6 +1,6 @@
 Recently, I enrolled in the TryHackMe SOC Level 1 room, which introduces core concepts and frameworks used in cybersecurity defense. These frameworks provide a structured way to understand, detect, and respond to cyber threats. Some of the most important models covered include the Pyramid of Pain, Cyber Kill Chain, Unified Kill Chain, Diamond Model, and MITRE ATT&CK. Each framework plays a role in helping defenders think like attackers while building effective defense strategies.
 
-# Cyber Defence Frameworks
+# 🛡️|Cyber Defence Frameworks
 
 1. Pyramid of Pain
 
@@ -41,7 +41,7 @@ Recently, I enrolled in the TryHackMe SOC Level 1 room, which introduces core co
 ## Summary
 Together, these frameworks form the foundation of modern cyber defense. They help SOC analysts not only detect and respond to attacks but also anticipate how adversaries might adapt. From the Pyramid of Pain’s focus on attacker cost, to the tactical guidance of MITRE ATT&CK, these models give a structured way to defend networks, investigate incidents, and continuously improve security posture.
 
-# Cyber Threat Intelligence
+# ⚔️|Cyber Threat Intelligence
 In the context of Cyber Threat Intelligence (CTI), there are several widely used tools and technologies that help analysts detect, analyze, and share threat information. Three of the most important are YARA, OpenCTI, and MISP.
 
 1. YARA
