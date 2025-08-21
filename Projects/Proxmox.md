@@ -13,11 +13,10 @@
 
 <img width="1028" height="516" alt="image" src="https://github.com/user-attachments/assets/85facf67-fa2e-4114-b8b2-a64ddf586261" />
 
-6.
+# Post Installation
+1.
 
-7.
-
-8.
+<img width="1007" height="392" alt="image" src="https://github.com/user-attachments/assets/2aeda809-f655-473b-9757-7e960c14f64b" />
 
 
 
