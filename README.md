@@ -1,49 +1,31 @@
-# SOC Analyst Career Plan
-My goal is to build the foundational knowledge and practical experience required to become a SOC Analyst. To achieve this, I will focus on developing strong technical skills in security monitoring, log analysis, and incident response while gaining hands-on experience with SIEM platforms, networking fundamentals, and operating system security. I will also practice documenting security incidents and communicating technical findings clearly. By mastering these skills, I will position myself to succeed as an entry-level SOC Analyst and grow toward advanced cybersecurity roles.
+# Completed
+## 🧑‍🎓| College Degree
+### Bachelor of Science in Cybersecurity
+* I hold a Bachelor of Science in Cybersecurity, where I have gained comprehensive knowledge in network security, information protection, risk management, and digital forensics. My academic background has provided me with a solid foundation in securing information systems and understanding emerging cybersecurity threats.
 
-## SOC Analyst Skills Checklist
-* Security Tools & Monitoring
+## 🏅| Certification
+### CompTIA Security+ Certification
+* I have earned the CompTIA Security+ certification, which demonstrates my proficiency in essential cybersecurity concepts, including network security, compliance, threat management, and risk mitigation. This certification validates my ability to implement security solutions and respond effectively to security incidents, ensuring the integrity and protection of information systems.
 
-- [ ] Proficiency with SIEM tools (Splunk, Microsoft Sentinel, Elastic/ELK, QRadar)
+## TryHackMe Certificate 
 
-- [ ] Basic experience with EDR/XDR solutions (CrowdStrike, Defender for Endpoint, SentinelOne)
+| Cert | About |
+| :---: | :---: |
+| <img width="561" height="387" alt="THM-JUXHD8QNYJ" src="https://github.com/user-attachments/assets/7fb52009-2ccf-466a-b17b-96fee7818569" /> | Pre Security: Cyber security is often thought to be a magical process that can only be done by the elite, and TryHackMe is here to show you that's not the case. Anyone, with any experience level, can learn cyber security and this Pre-Security learning path is the place to start. |
+|<img width="1122" height="794" alt="image" src="https://github.com/user-attachments/assets/c3e3219f-0d8a-4d13-bb7d-a3536ceef601" />|Cyber Security 101: Are you new to cyber security and not sure where to start? This pathway will help you acquire the core skills required to start your cyber security journey.|
 
-- [ ] Familiarity with vulnerability scanners (Nessus, OpenVAS, Qualys)
 
-- [ ] Ability to use packet analysis tools (Wireshark, tcpdump)
+# Comming Soon
 
-* Incident Response & Security Fundamentals
+## 🧑‍🎓| College Degree
+* Master Degrees
+* Master Degrees
 
-- [ ] Understand and apply the Incident Response lifecycle (NIST 800-61)
+## 🏆| Certifications
 
-- [ ] Detect and analyze Indicators of Compromise (IOCs)
-
-- [ ] Understand phishing, brute force, malware, privilege escalation attacks
-
-- [ ] Familiarity with MITRE ATT&CK framework for threat mapping
-
-* Networking & Protocols
-
-- [ ] Knowledge of TCP/IP, DNS, HTTP/S, SMTP, FTP basics
-
-- [ ] OSI model troubleshooting skills
-
-- [ ] Understanding of VPNs, proxies, and firewalls
-
-* Operating Systems & Scripting
-
-- [ ] Ability to analyze Windows Event Logs and Active Directory activity
-
-- [ ] Familiarity with Linux logs (/var/log/auth.log, /var/log/syslog)
-
-- [ ] Basic scripting in Python, Bash, or PowerShell for log parsing/automation
-
-* Soft Skills & Reporting
-
-- [ ] Strong written communication for incident reports
-
-- [ ] Ability to explain technical issues to non-technical staff
-
-- [ ] Collaboration and escalation skills within a SOC team
-
-- [ ] Documenting and following playbooks/runbooks
+| Entry🛠️ | Intermediate🧑‍🏫 | Expert🚀 |
+| :---: | :---: | :---: |
+| CompTIA A+ | CompTIA CySA+ | Certified Information Systems Security Professional (CISSP) |
+| CompTIA Network+ | CompTIA PenTest+ | Global Information Assurance Certification (GIAC) |
+| Cisco Certified Network Associate (CCNA) | Cisco Certified Network Professional (CCNP)| Offensive Security Certified Professional (OSCP)|
+| ✅ | Certified Ethical Hacker (CEH)| - |
