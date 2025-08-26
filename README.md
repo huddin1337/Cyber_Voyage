@@ -1,4 +1,4 @@
-# Completed
+# **Completed**
 ## 🧑‍🎓| College Degree
 ### Bachelor of Science in Cybersecurity
 * I hold a Bachelor of Science in Cybersecurity, where I have gained comprehensive knowledge in network security, information protection, risk management, and digital forensics. My academic background has provided me with a solid foundation in securing information systems and understanding emerging cybersecurity threats.
@@ -15,7 +15,7 @@
 |<img width="1122" height="794" alt="image" src="https://github.com/user-attachments/assets/c3e3219f-0d8a-4d13-bb7d-a3536ceef601" />|Cyber Security 101: Are you new to cyber security and not sure where to start? This pathway will help you acquire the core skills required to start your cyber security journey.|
 
 
-# Comming Soon
+# **Comming Soon**
 
 ## 🧑‍🎓| College Degree
 * Master Degrees
