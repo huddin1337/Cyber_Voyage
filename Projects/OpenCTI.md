@@ -1,3 +1,0 @@
-# OpenCTI
-
-## Adding A Container
