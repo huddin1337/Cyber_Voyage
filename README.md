@@ -1,3 +1,11 @@
+# Currently
+## Phase 1: Base Infrastructure
+- [ ] Install Proxmox VE
+- [ ] Create pfSense VM  
+  - Configure firewall rules  
+  - Setup DHCP & VLANs for network segmentation  
+  - Enable VPN access (OpenVPN/WireGuard)
+
 # **Completed**
 ## 🧑‍🎓| College Degree
 ### Bachelor of Science in Cybersecurity
