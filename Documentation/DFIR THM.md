@@ -25,8 +25,32 @@ Located in C:\Users\<username>\ is where is where the user profile directory is:
 * NTUSER.DAT (mounted on HKEY_CURRENT_USER when a user logs in)
 * USRCLASS.DAT (mounted on HKEY_CURRENT_USER\Software\CLASSES)
   
-This hive is located in C:\Windows\AppCompat\Programs\Amcache.hve Windows creates this hive to save information on programs that were recently run on the system.
+Windows creates this hive to save information on programs that were recently run on the system. This hive is located in C:\Windows\AppCompat\Programs\Amcache.hve 
 
 3. Think of transaction logs and backups as two different ways Windows keeps the registry reliable.
 * Transaction logs are like a running diary of changes to the registry. When a change is made, it's first written to a .LOG file before being saved to the main registry hive. This means the log might contain the very latest changes that haven't been fully committed yet. For forensic analysis, these logs can reveal recent activity that's not present in the main registry files.
 * Registry backups are snapshots of the registry hives. Windows automatically copies these hives to the RegBack directory every 10 days. These backups are useful if a registry key has been deleted or modified, as they can provide a record of its state at a previous point in time.
+
+
+KAPE:
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/35fe0d0b-a3d6-4527-851a-44b10cc3e41b" />
+
+
+Autopsy:
+<img width="1710" height="922" alt="image" src="https://github.com/user-attachments/assets/c4f345a7-930f-4308-9078-431c96344f1a" />
+
+
+FTK Imager:
+<img width="1166" height="737" alt="image" src="https://github.com/user-attachments/assets/3da97c6f-289a-4392-a624-4833a706a758" />
+
+Registry Viewer:
+<img width="1424" height="736" alt="image" src="https://github.com/user-attachments/assets/532434c8-52d2-42de-aff4-b6d8e1eec558" />
+
+Zimmerman's Registry Explorer:
+<img width="1202" height="714" alt="image" src="https://github.com/user-attachments/assets/62e74713-801e-42d9-9fb8-cf45a0cc8ba9" />
+
+RegRipper:
+<img width="611" height="525" alt="image" src="https://github.com/user-attachments/assets/c251ae48-d9cf-41ee-ba60-9736d038a288" />
+
+
+
