@@ -42,3 +42,7 @@ Again, here are some more introductory CTFs. These are a little more complex, bu
 * Snort - Learn how to use Snort to detect real-time threats, analyse recorded traffic files and identify anomalies
 
   ___
+
+## Nmap Live Host Discovery
+<img width="1239" height="520" alt="image" src="https://github.com/user-attachments/assets/a746b612-faae-4838-90a5-f9afe962e47b" />
+<img width="1238" height="260" alt="image" src="https://github.com/user-attachments/assets/ab8bb982-2a90-497d-a753-45d35d334f4c" />
