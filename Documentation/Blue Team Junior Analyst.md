@@ -9,7 +9,7 @@
 
 
 
-# <code style="color : red"> Introduction to Digital Forensics </code>
+# Introduction to Digital Forensics
 
 * Computer Forensics – Identifying, collecting, and preserving evidence taken from desktops, laptops, and other computer systems and storage media to aid investigations or legal proceedings.
 * Network Forensics – The monitoring, collection, and analysis of network activities such as visited websites and connected IPs, usually associated with incident response and intrusion detection.
