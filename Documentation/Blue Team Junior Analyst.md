@@ -60,7 +60,7 @@
 ---
 
 
-## $${\color{red}Digital Forensics}$$
+## Digital Forensics
 > [!NOTE]
 > 
 >### 1. Evidence via Computers
@@ -107,7 +107,7 @@
 
 ---
 
-## $${\color{red}Linux CLI}$$
+## Linux CLI
 
 ### Linux File System and Command Summary
 
@@ -126,7 +126,7 @@
 
 ---
 
-## $${\color{red}Steganography}$$
+## Steganography
 > [!IMPORTANT]
 > ```
 > sudo apt-get install steghide
@@ -178,7 +178,7 @@ for f in *; do stegseek $f  pass.txt;  done
       
 ---
 
-## $${\color{red}Cracking ZIP Files}$$
+## Cracking ZIP Files
 > [!TIP]
 > ### Creating a Password-Protected ZIP File
 > 
@@ -263,7 +263,7 @@ for f in *; do stegseek $f  pass.txt;  done
       
 ---
 
-## $${\color{red}Course Capstone}$$
+## Course Capstone
 > [!IMPORTANT]
 > ### Digital Forensics Challenge: Finding Hidden Evidence
 > 
