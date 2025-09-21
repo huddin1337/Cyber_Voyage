@@ -1,3 +1,5 @@
+# Identity and Access Management Simulation
+
 **Role:** Identity and Access Management (IAM) Developer, Cybersecurity Team
 
 **Objective:** Lead the design and implementation of an IAM platform for Enterprises.
@@ -125,18 +127,98 @@ A successful **Identity and Access Management (IAM)** strategy for a large organ
 
 
 
+---
+---
+---
+### IAM Profile for a Global IT Company
+
+This document outlines the **IAM profile** for a large, global IT company with over 150,000 employees and a wide array of proprietary digital assets. The company is undergoing a digital transformation to improve customer experience, increase operational efficiency, and accelerate innovation.
 
 
+### Challenges & Strategic Focus
+
+The company's expansion and digital initiatives have created several challenges that its IAM strategy must address:
+
+* **Security Concerns:** A large digital footprint makes the company a prime target for cyber threats and data breaches.
+* **User Experience:** They need to provide a seamless and secure experience for a diverse user base, including employees, partners, and customers.
+* **Operational Efficiency:** The goal is to streamline access management and automate manual processes to boost overall efficiency.
+
+The existing IAM strategy requires a full assessment to ensure it can support these evolving needs. The strategic focus areas for this project are:
+
+* **User Lifecycle Management**
+* **Access Control Mechanisms**
+* **Compliance and Governance**
+* **Integration with Existing Systems**
+* **Cloud Services Integration**
+* **Enhanced User Experience**
 
 
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+------
+---
+---
+---
+---
+---
+---
+------
+---
+---
+---
+---
+---
+---
+------
+---
+---
+---
+---
+---
+---
+------
+---
+---
+---
+---
+---
+---
+---
+
+# Master Card Phisshing
+
+Im being prompted to create a convincing, contextual phishing email for a simulated campaign at Mastercard. The goal is to make the email believable to test employees' ability to identify a real threat. I need to craft a message that doesn't look like an "obvious fake."
+
+<img width="822" height="902" alt="image" src="https://github.com/user-attachments/assets/19a79303-db83-46cf-a894-b1e6f02124a2" />
+
+### Here are some resources to help you
+The percentages shown are based off the total number of staff members who received the email. 
+
+If 100 people received the email and 50 people opened it - the email open rate would be 50%.
+
+* Email open rate = the percentage of people that opened it
+* Email click-through rate = the percentage of people that clicked on the link
+* Phishing success rate = the percentage of people that clicked the link and inputted some personal information
 
 
+### The main takeaway points from the example presentation include:
 
-
-
-
-
-
+* They use contextual & visual examples of how to spot phishing emails
+* The presentation is clear, concise & heavy on the visuals
+* They provide clear & concise action points
 
 
 
