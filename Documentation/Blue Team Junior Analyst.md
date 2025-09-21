@@ -14,7 +14,9 @@
 
 
 
-# Introduction to Digital Forensics
+
+# $${\color{red}Introduction-to-Digital-Forensics}$$
+
 > [!TIP]
 >* Computer Forensics – Identifying, collecting, and preserving evidence taken from desktops, laptops, and other computer systems and storage media to aid investigations or legal proceedings.
 >* Network Forensics – The monitoring, collection, and analysis of network activities such as visited websites and connected IPs, usually associated with incident response and intrusion detection.
@@ -57,7 +59,8 @@
 
 ---
 
-## Digital Evidence
+
+## $${\color{red}Digital-Forensics}$$
 > [!NOTE]
 > 
 >### 1. Evidence via Computers
@@ -261,6 +264,37 @@ for f in *; do stegseek $f  pass.txt;  done
 ---
 
 ## Course Capstone
+> [!IMPORTANT]
+> ### Digital Forensics Challenge: Finding Hidden Evidence
+> 
+> #### **Step 1: Environment Setup**
+> 
+> * **Install:** VirtualBox and the Kali Linux VM.
+> * **Download:** The challenge disk image to your Kali VM and unzip it.
+> 
+> #### **Step 2: Begin Investigation**
+> 
+> * Start in the "Saved Emails" directory as your starting point.
+> * **Commands:** Use `cd` to navigate and `ls` to list files.
+> 
+> #### **Step 3: Apply Forensic Techniques**
+> 
+> Use the following commands to find 4 pieces of evidence (look for strings like `{1 of 4}`).
+> 
+> | Technique | Commands | Notes |
+> | :--- | :--- | :--- |
+> | **Hidden Files/Folders** | `ls -a` | Look for files starting with a `.` |
+> | **Incorrect File Extensions** | `file` | Use this to determine a file's true type. |
+> | **Reading Files** | `cat`, `head`, `strings` | Read contents of text files or extract strings from binary files. |
+> | **Steganography** | `steghide` | Use the `info` and `extract` commands. |
+> | **Password Cracking** | `fcrackzip` | Use with the `rockyou.txt` wordlist for `.zip` files. |
+> 
+> #### **Step 4: Comprehensive Search**
+> 
+> * Examine all files and folders in both the GUI and CLI.
+> * Remember to look in unexpected places, as some evidence is subtly hidden.
+> * **Tip:** Use `man <command>` for help with any tool.
+  
 
 ---
 
