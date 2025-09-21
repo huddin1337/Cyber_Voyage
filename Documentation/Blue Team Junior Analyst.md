@@ -1,25 +1,25 @@
 # Blue Team Junior Analyst Pathway Bundle
-* [Introduction to Digital Forensics](#introduction-to-digital-forensics)
+1. [Introduction to Digital Forensics](#introduction-to-digital-forensics)
   * [Digital Evidence](#Digital-Evidence)
   * [Linux CLI](#Linux-CLI)
   * [Steganography](#Steganography)
   * [Cracking ZIP Files](#Cracking-ZIP-Files)
   * [Course Capstone](#Course-Capstone)
-* [Introduction to OSINT](#Introduction-to-OSINT)
-* [Introduction to Vulnerability Management](#Introduction-to-Vulnerability-Management)
-* [Introduction to Threat Hunting](#Introduction-to-Threat-Hunting)
-* [Introduction to Network Analysis](#Introduction-to-Network-Analysis)
-* [Introduction to Dark Web Operations](#Introduction-to-Dark-Web-Operations)
+2. [Introduction to OSINT](#Introduction-to-OSINT)
+3. [Introduction to Vulnerability Management](#Introduction-to-Vulnerability-Management)
+4. [Introduction to Threat Hunting](#Introduction-to-Threat-Hunting)
+5. [Introduction to Network Analysis](#Introduction-to-Network-Analysis)
+6[Introduction to Dark Web Operations](#Introduction-to-Dark-Web-Operations)
 
 
 
 
 # Introduction to Digital Forensics
-
-* Computer Forensics – Identifying, collecting, and preserving evidence taken from desktops, laptops, and other computer systems and storage media to aid investigations or legal proceedings.
-* Network Forensics – The monitoring, collection, and analysis of network activities such as visited websites and connected IPs, usually associated with incident response and intrusion detection.
-* Memory Forensics – The process of recovering evidence from the RAM of a running system (also known as live acquisition or live response).
-* Mobile Forensics – The process of recovering evidence from mobile phones, SIM cards, PDAs, tablets, and other mobile devices.
+> [!TIP]
+>* Computer Forensics – Identifying, collecting, and preserving evidence taken from desktops, laptops, and other computer systems and storage media to aid investigations or legal proceedings.
+>* Network Forensics – The monitoring, collection, and analysis of network activities such as visited websites and connected IPs, usually associated with incident response and intrusion detection.
+>* Memory Forensics – The process of recovering evidence from the RAM of a running system (also known as live acquisition or live response).
+>* Mobile Forensics – The process of recovering evidence from mobile phones, SIM cards, PDAs, tablets, and other mobile devices.
 
 
 | Incident Response Capabilities | Legal Prosecution and Chain of Custody | Monitoring Employees |
@@ -37,6 +37,7 @@
 | **Threat Hunter** | Expert technical defender with a deep understanding of offensive and defensive practices. Hunts for threats by understanding computer/network workings and identifying key artifacts. |
 | **Incident Responder** | Top-tier security analyst with skills across blue-team disciplines, including forensics. Conducts deep, in-depth investigations to understand how a system was compromised and the behavior of the device. Often works with Forensic Examiners to retrieve and analyze data from physical media. |
 
+---
 
 ### Evidence Collection
 
@@ -54,11 +55,72 @@
 | **Autopsy** | An open-source digital forensics tool with a user-friendly interface. It analyzes forensic images from hard drives and mobile devices to extract key information like recently used programs, deleted files, emails, and visited websites. |
 | **Volatility** | A Python-based memory forensics framework that analyzes memory dumps to uncover a computer's past activities and potential malicious actions. It works across Windows, Linux, and Mac OS, and can even recover deleted files. |
 
-1. ## Digital Evidence
+---
 
+## Digital Evidence
+> [!NOTE]
+> 
+>### 1. Evidence via Computers
+>Most evidence will be **files and other data on electronic storage media**, such as hard drives in desktops, laptops, and mobile devices. For example, a folder of inappropriate images on a work laptop is considered evidence and must be properly preserved for disciplinary action or prosecution.
+>Other types of evidence found on computers can include:
+>* Saved emails or chat logs
+>* Images, videos, and audio files
+>* Text files
+>Criminals often use tactics to hide data from immediate view. Files and data can be hidden in **slack space** on hard drives or concealed within legitimate files using **steganography**.
+>
+>### 2. Evidence via Network
+>When moving beyond physical storage, there are many types of evidence we can collect from networks.
+>**Browser history** is a major source of evidence, acting as a record of visited sites and access times. This is useful for investigating breaches of a company’s **Acceptable Use Policy**, such as inappropriate browsing during work hours.
+>We don't need to rely solely on the browser, as **network devices** like web proxies and routers also log information about online requests.
+>In recent years, **social media posts**, as well as posts on forums and blogs, have been used as digital evidence in court, provided there is a reasonable belief they were made by the intended account owner. **Instant messaging conversations** from applications like Facebook Messenger and WhatsApp can also be used as evidence.
+>To learn more about network forensics and tools, you can refer to the provided link.
+>
+>### 3. Evidence via Mobiles
+>Due to their constant use, mobile phones contain a wealth of information that can be very useful to investigators. Evidence that can be retrieved from a mobile device includes:
+>* Call history
+>* Text messages
+>* Contacts
+>* Web history
+>* Images and videos
+>* Apps
+>* GPS location
+>* Notes
+>With the use of specialized mobile forensics tools, even **deleted files** and old app data can be recovered.
+>For more information on mobile forensics and the tools used, you can refer to the provided link.
 
+---
+> [!CAUTION]
+> **Chain of Custody** is the crucial process of tracking the handling of evidence to ensure it hasn't been tampered with, making it admissible in court. The process requires tracking who received the evidence, who it was received by, and the date and time of the transfer. To maintain the chain of custody, analysts should never work on the original evidence. Instead, they should create a full-bit copy, verify its integrity using a hash, and then work on the copy. Before storing evidence, the storage media should be completely sanitized to avoid contamination.
 
+---
 
+| Question | Correct Answer | Explanation |
+| :--- | :--- | :--- |
+| **Question 1: Persistent Data refers to;** | Data stored on storage media | Persistent data is data that is stored physically on a medium such as a hard drive or USB. |
+| **Question 2: Volatile Data refers to;** | Data that can be lost if a system is powered off | Volatility data is data that can be lost under certain circumstances, such as a system being powered off, or the memory space being reallocated. |
+| **Question 3: What should occur to ensure that the original evidence and any copies are completely identical?** | File hashing | Even the smallest change to the input file will result in a change to the resulting hash value, making it easy to prove (or disprove) the authenticity of digital evidence. |
+| **Question 4: Can digital evidence be collected without authorization or a warrant?** | No | In 99% of cases, a warrant must be provided to collect digital evidence from a person of interest's devices. |
+| **Question 5: Recently, the following evidence categories have been used in court; internet browsing history, ATM transactions, instant messaging conversations, and GPS tracking, true or false?** | True | The answer is true! This goes to show how important digital forensics is concerning law enforcement. |
+
+---
+
+## Linux CLI
+
+---
+
+## Steganography
+
+---
+
+## Cracking ZIP Files
+
+---
+
+## Course Capstone
+
+---
+
+### Digital Evidence Quiz
 ---
 # Introduction to OSINT
 ---
