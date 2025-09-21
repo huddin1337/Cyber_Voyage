@@ -106,14 +106,158 @@
 
 ## Linux CLI
 
+### Linux File System and Command Summary
+
+| Command/Concept | Description | Example Usage |
+| :--- | :--- | :--- |
+| **Linux File Structure** | A hierarchical, tree-like organization of all files and directories on the system, beginning at the root directory (`/`). | `/home/Bruce`, `/etc`, `/var/log` |
+| **`cd`** | **C**hange **D**irectory. Used to navigate to a new directory. | `cd /var/www/html` |
+| **`ls`** | **L**i**s**t. Lists the files and directories in the current directory. | `ls` |
+| **`ls -a`** | **L**i**s**t **A**ll. Lists all files, including hidden ones (those with a `.` at the beginning of their name). | `ls -a` |
+| **`cat`** | Concatenates files and prints their content to the standard output. Commonly used to display the entire content of a file. | `cat /etc/passwd` |
+| **`strings`** | Extracts and prints human-readable strings from binary files. | `strings /bin/bash` |
+| **`head`** | Displays the first few lines of a file (default is 10). | `head my_log_file.txt` |
+| **`find`** | A powerful and flexible command used to search for files in a directory hierarchy based on various criteria. | `find /home/Bruce -name "report.txt"` |
+| **`locate`** | A fast way to find files by searching a pre-built database. | `locate financial_statement.csv` |
+| **`file`** | Determines the file type. | `file my_document.pdf` |
+
 ---
 
 ## Steganography
+> [!IMPORTANT]
+> ```
+> sudo apt-get install steghide
+> ```
 
+### Steganography with Steghide: A Step-by-Step Guide
+> [!NOTE]
+> ### **1. Prepare the Secret File**
+> 
+> First, you need to compress the file or folder you want to hide. This ensures all the data is in one file ready for embedding.
+> 
+> - **Command:** `zip -r secret.zip secret`
+> - **Note:** The `-r` flag tells the `zip` command to compress recursively, including all files and subdirectories.
+> 
+> ### **2. Embed the Secret File in a Cover File**
+> 
+> Next, use the `steghide` tool to hide your compressed file inside a cover file, like an image.
+> 
+> - **Command:** `steghide embed -cf [cover_file] -ef [secret_file]`
+> - **Example:** `steghide embed -cf laptop.jpg -ef secret.zip`
+> - **Flags:**
+>     - `-cf`: Specifies the **c**over **f**ile.
+>     - `-ef`: Specifies the file you want to **e**mbed.
+> - **Optional:** You can use the `-sf` flag to save the output to a new file instead of overwriting the cover file.
+> - **Example:** `steghide embed -cf laptop.jpg -ef secret.zip -sf laptop2.jpg`
+> 
+> ### **3. Extract the Hidden File**
+> 
+> To retrieve the hidden data, use the `steghide extract` command. You will be prompted to enter the passphrase you set during the embedding process.
+> 
+> - **Command:** `steghide extract -sf [stego_file]`
+> - **Example:** `steghide extract -sf laptop2.jpg`
+> - **Flags:**
+>     - `-sf`: Specifies the **s**tego **f**ile from which to extract data.
+> 
+### Steganography Activity and Quiz
+
+```
+sudo apt install stegseek
+## I create a password list containg words given to me for this quiz
+stegseel cars.jpeg password.txt
+## Brute forces passwords on steghide phrases
+## all files in directory
+for f in *; do stegseek $f  pass.txt;  done
+
+## At the end of the quiz they metioned using "StegDetect"
+
+```
+      
 ---
 
 ## Cracking ZIP Files
+> [!TIP]
+> ### Creating a Password-Protected ZIP File
+> 
+> #### **Step 1: Install the `zip` tool**
+> 
+> Ensure you have the `zip` tool installed on your system.
+> 
+> - **Command:** `sudo apt-get install zip`
+> - **Note:** This command is for Debian/Ubuntu-based operating systems.
+> 
+> #### **Step 2: Create the Encrypted ZIP Archive**
+> 
+> Use the `zip` command with the `--encrypt` flag to create a password-protected ZIP file.
+> 
+> - **Command:** `zip --encrypt [output_file_name] [input_file]`
+> - **Example:** `zip --encrypt Protected.zip text.txt`
+> - **Note:** You will be prompted to enter a password, which will be required to access the file's contents later.
+> 
+> #### **Step 3: Verify Encryption**
+> - Attempt to unzip the file to confirm it is password-protected. The system will ask for the password before extracting the files.
 
+---
+> [!NOTE]
+> ### ZIP Password Cracking with `fcrackzip`
+> 
+> #### **1. Install `fcrackzip`**
+> 
+> First, ensure you have the `fcrackzip` tool installed on your system.
+> 
+> - **Command:** `sudo apt-get install fcrackzip`
+> - **Note:** This command is for Debian/Ubuntu-based operating systems.
+> 
+> #### **2. Understand Brute-Force Attacks**
+> 
+> A brute-force attack tries every possible password combination to find the correct one.
+> 
+> - **Pros:** Guarantees finding the password eventually. Can be faster if you know the password's length or character set.
+> - **Cons:** Extremely time-consuming, especially for longer passwords.
+> 
+> #### **3. Launch the Brute-Force Attack**
+> 
+> Use the `fcrackzip` command with specific flags to launch a brute-force attack on a password-protected ZIP file.
+> 
+> - **Command:** `fcrackzip -b -u -c [char_set] -l [length] [target_file]`
+> - **Example:** `fcrackzip -b -u -c a1 -l 4 BruteForceAttack.zip`
+> - **Notes on Flags:**
+>     - `-b`: Specifies a brute-force attack.
+>     - `-u`: Unzips the file if the password is found.
+>     - `-c`: Defines the character set to use for the attack (e.g., `a1` for lowercase letters and numbers).
+>     - `-l`: Sets the password length to check.
+ 
+      
+---
+> [!NOTE]
+> ### ZIP Password Cracking with a Dictionary Attack
+> 
+> #### **1. Understand the Method**
+> 
+> A dictionary attack uses a wordlist (a file containing common passwords) to guess the password.
+> 
+> - **Pros:** Can be very fast if the password is in the wordlist.
+> - **Cons:** Will fail completely if the password is not in the wordlist.
+> 
+> #### **2. Find a Wordlist**
+> 
+> Locate a wordlist on your system. A popular one is `rockyou.txt`.
+> 
+> - **To locate:** `locate rockyou.txt`
+> - **To decompress (if needed):** `gunzip /path/to/rockyou.txt.gz`
+> 
+> #### **3. Launch the Dictionary Attack**
+> 
+> Use the `fcrackzip` command with the `-D` flag to perform the attack.
+> 
+> - **Command:** `fcrackzip -D -u -p [wordlist_path] [target_file]`
+> - **Example:** `fcrackzip -D -u -p /usr/share/wordlists/rockyou.txt DictionaryAttack.zip`
+> - **Notes on Flags:**
+>     - `-D`: Specifies a dictionary attack.
+>     - `-u`: Unzips the file if the password is found.
+>     - `-p`: Points to the wordlist file.
+ 
+      
 ---
 
 ## Course Capstone
