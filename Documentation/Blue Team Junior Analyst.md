@@ -6,6 +6,11 @@
   * [Cracking ZIP Files](#Cracking-ZIP-Files)
   * [Course Capstone](#Course-Capstone)
 * [Introduction to OSINT](#Introduction-to-OSINT)
+  * [Introduction](#Introduction)
+  * [Intelligence](#Intelligence)
+  * [Securing Yourself Online](#Securing-Yourself-Online)
+  * [Tools and Services](#Tools-and-Services)
+  * [Course Capstone](#Course-Capstone)
 * [Introduction to Vulnerability Management](#Introduction-to-Vulnerability-Management)
 * [Introduction to Threat Hunting](#Introduction-to-Threat-Hunting)
 * [Introduction to Network Analysis](#Introduction-to-Network-Analysis)
@@ -329,7 +334,7 @@ for f in *; do stegseek $f  pass.txt;  done
 
 
 
-
+ 
 
 
 
@@ -339,6 +344,217 @@ for f in *; do stegseek $f  pass.txt;  done
 ---
 # Introduction to OSINT
 
+---
+## Introduction
+> [!IMPORTANT]
+> ### What is OSINT?
+> 
+> **OSINT**, or **Open-Source Intelligence**, is data collected from publicly available sources. It is widely used in various fields, from law > enforcement and business to cybercrime, for both offensive and defensive purposes.
+> 
+> #### Examples of OSINT Data:
+> 
+> * **Publicly-available employee information:** Websites with a "meet the team!" section can be used by attackers to find targets for social engineering.
+> * **Job descriptions:** These can reveal a company's internal systems and technologies, which attackers can use to plan their attacks.
+> * **Social media metadata:** Geotagged photos on social media can reveal a user's location and the type of device they used.
+> * **User profiles:** Public social media information (date of birth, location, interests) can be used to build a profile of an individual.
+> * **Exposing cyber criminals:** OSINT can be used to identify cyber criminals and pass their details to law enforcement.
+> 
+> OSINT is a powerful tool that helps attackers understand their targets without direct engagement and allows defenders to reduce their public > information footprint and improve security.
+
+> [!NOTE]
+> ### Why OSINT is Useful
+> 
+> OSINT is a valuable tool with applications across multiple fields.
+> 
+> | Group | How They Use OSINT |
+> | :--- | :--- |
+> | **Defenders** | Use it to perform public exposure assessments, reducing the attack surface by identifying and mitigating publicly available information about employees and the company. |
+> | **Law Enforcement** | Utilizes it for profiling and tracking persons of interest. It is also used to uncover the real identities of cybercriminals and find missing persons. |
+> | **Businesses** | Monitors market activity and competitors. It helps them improve business operations and customer engagement, and it also serves as a security measure to watch for leaked data and planned attacks. |
+> | **Attackers** | Use it for passive information gathering to plan attacks. By collecting information on a target's systems and employees, they can prepare more effective social-engineering and spear-phishing campaigns. |
+
+> [!TIP]
+> ### Associated Roles
+> 
+> | Role | How They Use OSINT |
+> | :--- | :--- |
+> | **Tactical Threat Analyst** | Gathers information on adversaries, collects IOCs from public sources, and conducts internal threat exposure > checks. |
+> | **Strategic Threat Analyst** | Identifies and mitigates publicly available information about the organization, such as details on internal systems and employee data. |
+> | **Security Analyst** | Checks the reputation of IOCs (like IP addresses and file hashes) using OSINT sources such as VirusTotal, and investigates malicious social media accounts. |
+> | **Vulnerability Analyst** | Stays up-to-date with publicly announced vulnerabilities using sources like the National Vulnerability Database (NVD) and social media. |
+> | **Penetration Tester/Red Teamer** | Gathers intelligence on target systems and employees to craft more effective and discreet attacks, leading to a faster and more successful penetration test. |
+
+
+
+---
+## Intelligence
+
+### The Intelligence Cycle: A Step-by-Step Guide
+
+The intelligence cycle is a 5-step process used to convert raw data into actionable intelligence.
+
+| Step | Purpose | Notes |
+| :--- | :--- | :--- |
+| **1. Planning and Direction** | Define the purpose and scope of your investigation. | This is the crucial first step where you determine what problem you are solving and what information you need. |
+| **2. Collection** | Gather raw data and information. | Use various techniques to obtain data that will help with your intelligence operation. |
+| **3. Processing** | Organize and filter the collected data. | This involves decoding, decrypting, and validating information to identify only what is useful for your research. |
+| **4. Analysis** | Convert processed information into a meaningful intelligence product. | Compile your filtered information to find solutions and create a coherent report or presentation. |
+| **5. Dissemination** | Deliver the final intelligence product to clients. | This step helps stakeholders make informed decisions based on your findings. |
+
+---
+## Securing Yourself Online
+> [!TIP]
+> ### Securing Yourself Online: Online Tracking
+> 
+> | Type of Tracking | Description |
+> | :--- | :--- |
+> | **Fingerprinting** | The general term for the "traces" you leave behind while browsing, which are used to follow you across websites and build a profile of your interests. |
+> | **IP Addresses** | Your public IP address is a fundamental piece of information that is transmitted to every website you visit, revealing your location and identity. |
+> | **Cookies** | Small files stored on your computer. **Tracking cookies** are a type of third-party cookie used to monitor your online activity and provide data for targeted advertising and user profiling. |
+> | **Browser Fingerprinting** | The most dangerous form of tracking, where a unique identifier is created using data from your browser and computer settings, such as browser version, operating system, and screen resolution. This makes it very difficult to browse privately. |
+> 
+> ### Securing Yourself Online: Anonymization
+> 
+> | Method | Description |
+> | :--- | :--- |
+> | **Add Extra Layers** | Use a Virtual Machine (VM) or a Live USB to perform research. By reverting the system to a clean state after use, you can erase all traces of your activity. |
+> | **Hide Your Public IP** | Use a VPN or the Tor browser to change your public IP address. This helps you to remain private and makes it harder for websites to identify and track you. |
+> | **Browser Extensions** | Install extensions like Privacy Badger, No Script, and Ublock Origin to block trackers, prevent unwanted scripts from running, and automatically delete cookies. |
+> | **Sock Puppetry** | Create alter-ego accounts to conduct research. This keeps your real identity separate from your OSINT activities and helps you avoid direct connections to your social networks. |
+
+
+
+
+
+---
+## Tools and Services
+
+### $$\color{red}{\text{1. The Harvester}}$$   
+
+The Harvester is a command-line tool for **Open-Source Intelligence (OSINT)** that gathers information on a target domain from publicly available sources.
+
+| Command Flag | Purpose | Example |
+| :--- | :--- | :--- |
+| `-d` | Specifies the **d**omain to investigate. | `-d google.com` |
+| `-b` | Selects the **b**ackend data source. | `-b linkedin` |
+| `-l` | Limits the number of results to **l**ist. | `-l 100` |
+
+**Example Usage:**
+* **To find IPs and hostnames from Google:** `theharvester -d google.com -l 100 -b google`
+* **To find employee names from LinkedIn:** `theharvester -d google.com -l 100 -b linkedin`
+
+
+### $$\color{orange}{\text{2. Maltego}}$$   
+
+### Maltego
+
+Maltego is a powerful OSINT tool that graphically represents real-time data and connections between different entities.
+
+#### **1. Launch and Set Up**
+* **Launch Maltego:** Type `maltego` in the terminal.
+* **Select Version:** Choose the free **Community Edition**.
+* **Create an Account:** You will need to create an account and get an API key to use the tool.
+
+#### **2. Install Transforms**
+* Go to the **Transform Hub** to install tools that gather data from different sources.
+* **Example Transforms:** "CaseFile Entities," "HaveIBeenPwned?", "Social Links CE," and "Shodan."
+
+#### **3. Create a New Graph**
+* Open a blank graph.
+* From the "Entity Palette," drag a target entity (e.g., "Domain") onto the graph.
+
+#### **4. Run a Scan**
+* Right-click the entity and run "All transforms."
+* **Result:** Maltego will generate a visual graph displaying all the discovered information and connections.
+
+
+### $$\color{yellow}{\text{3. Tweetdeck}}$$   
+
+### TweetDeck Summary
+
+| Feature | Description |
+| :--- | :--- |
+| **Purpose** | A tool for security professionals to monitor Twitter in real-time, tracking vulnerabilities, attacks, and threat actors. |
+| **Columns** | Allows users to create custom columns based on specific search queries. |
+| **Search Queries** | Users can build complex queries using keywords, hashtags (`#`), and logical operators (`AND`/`OR`) to filter a massive volume of tweets. |
+| **Advanced Search** | Twitter's Advanced Search tool can be used to build and refine complex search strings before pasting them into TweetDeck. |
+
+
+
+### $$\color{green}{\text{4. Google Docks}}$$   
+
+### Google Dorks
+
+| Operator | Purpose | Example |
+| :--- | :--- | :--- |
+| **`filetype:`** | Searches for a specific file type. | `cyber security filetype:pdf` |
+| **`site:`** | Restricts the search to a specific domain. Can be used with `-` to exclude sites for subdomain enumeration. | `site:facebook.com -site:www.facebook.com` |
+| **`inurl:`** | Finds a keyword within the URL of a webpage. | `inurl:admin` |
+
+
+### $$\color{cyan}{\text{5. Defending Against Google Dorks}}$$   
+
+### Defending Against Google Dorks
+
+| Method | Description |
+| :--- | :--- |
+| **Geofencing** | Blocks access to web content based on a user's IP address and geographic location. |
+| **IP Whitelisting** | A more secure method that only allows specified IP addresses to access a resource, blocking all others. |
+| **Crawler Restrictions** | Prevents search engine crawlers from indexing parts of your website using a `robots.txt` file. |
+| **Requesting Content Removal** | You can request that Google temporarily or permanently remove sensitive content from its search index if you can prove ownership of the site. |
+
+
+### $$\color{blue}{\text{6. OSINT Framework}}$$   
+
+### OSINT Framework
+
+The [OSINT Framework](https://www.osintframework.com/) is a web-based hub that categorizes hundreds of OSINT tools and resources.
+
+| Use Case | How to Access | Description |
+| :--- | :--- | :--- |
+| **Persona Creation** | Navigate to `OpSec` > `Persona Creation`. | Find tools to create authentic-looking fake personas for social engineering. |
+| **Email Breach Checks** | Navigate to `Email Address` > `Data Breach`. | Find services to check if an email address has been compromised in a data breach. |
+| **Skill Development** | Navigate to the `Training` branch. | Provides resources and links to further your OSINT knowledge. |
+
+
+### $$\color{purple}{\text{7. TinyEye}}$$   
+
+[TinyEye](https://tineye.com/)
+
+| Tool | Purpose | How to Use | Use Case |
+| :--- | :--- | :--- | :--- |
+| **TinEye** | A reverse image search engine that identifies where an image appears online. It can also be used to find altered or resized versions of an image. | Go to the website, then upload an image or paste a URL into the search bar. | **Identifying Social-Media Fakes**: Upload a profile photo to see if it's a stock image or widely used online, which suggests a fake account. |
+
+
+### $$\color{fuchsia}{\text{8. Google Image Search}}$$   
+
+| Tool | Purpose | How to Use | Key Features |
+| :--- | :--- | :--- | :--- |
+| **Google Image Search** | Performs reverse image searches to find where an image exists online. | Upload an image file or paste an image URL into the search bar. | Finds exact matches on indexed pages, provides a generated description of the image, and returns a massive number of results. |
+
+
+---
+## Course Capstone
+> [!IMPORTANT]
+> ### OSINT Challenge Brief
+> 
+> #### **1. Challenge Objectives**
+> * Identify social media accounts and websites.
+> * Build a profile of the person-of-interest.
+> * Find evidence of malicious activity.
+> 
+> #### **2. Starting Information**
+> * **Twitter Handle:** `@sp1ritfyre`
+> * **Report Template:** `SBT-OSINT-Challenge-Report.txt`
+> 
+> #### **3. Key Techniques and Tips**
+> * **Follow the Report Template:** Use the provided `.txt` file to focus your information gathering.
+> * **Do Not Perform Unauthorized Access:** Do not attempt to brute force passwords. Instead, look for publicly available credentials.
+> * **Check DNS TXT Records:** These records can sometimes contain hidden text strings or comments.
+> * **Decode Encoded Data:** Look for strings in **Base64** or **Hexadecimal** and use a decoder to read them.
+> * **Use Tools:** Apply OSINT tools like The Harvester, Maltego, the OSINT Framework, and Google Dorks.
+> * **Collaborate:** Discuss the challenge with other students in the specified Discord channel, but do not share spoilers.
+---
 
 
 
