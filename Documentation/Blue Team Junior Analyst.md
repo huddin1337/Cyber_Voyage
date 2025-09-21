@@ -9,7 +9,7 @@
 3. [Introduction to Vulnerability Management](#Introduction-to-Vulnerability-Management)
 4. [Introduction to Threat Hunting](#Introduction-to-Threat-Hunting)
 5. [Introduction to Network Analysis](#Introduction-to-Network-Analysis)
-6[Introduction to Dark Web Operations](#Introduction-to-Dark-Web-Operations)
+6. [Introduction to Dark Web Operations](#Introduction-to-Dark-Web-Operations)
 
 
 
