@@ -15,7 +15,7 @@
 
 
 
-# $${\color{red}Introduction-to-Digital-Forensics}$$
+# Introduction to Digital Forensics
 
 > [!TIP]
 >* Computer Forensics – Identifying, collecting, and preserving evidence taken from desktops, laptops, and other computer systems and storage media to aid investigations or legal proceedings.
@@ -60,7 +60,7 @@
 ---
 
 
-## $${\color{red}Digital-Forensics}$$
+## $${\color{red}Digital Forensics}$$
 > [!NOTE]
 > 
 >### 1. Evidence via Computers
@@ -107,7 +107,7 @@
 
 ---
 
-## Linux CLI
+## $${\color{red}Linux CLI}$$
 
 ### Linux File System and Command Summary
 
@@ -126,7 +126,7 @@
 
 ---
 
-## Steganography
+## $${\color{red}Steganography}$$
 > [!IMPORTANT]
 > ```
 > sudo apt-get install steghide
@@ -178,7 +178,7 @@ for f in *; do stegseek $f  pass.txt;  done
       
 ---
 
-## Cracking ZIP Files
+## $${\color{red}Cracking ZIP Files}$$
 > [!TIP]
 > ### Creating a Password-Protected ZIP File
 > 
@@ -263,7 +263,7 @@ for f in *; do stegseek $f  pass.txt;  done
       
 ---
 
-## Course Capstone
+## $${\color{red}Course Capstone}$$
 > [!IMPORTANT]
 > ### Digital Forensics Challenge: Finding Hidden Evidence
 > 
