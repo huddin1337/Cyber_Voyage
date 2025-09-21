@@ -1,15 +1,15 @@
 # Blue Team Junior Analyst Pathway Bundle
-1. [Introduction to Digital Forensics](#introduction-to-digital-forensics)
+* [Introduction to Digital Forensics](#introduction-to-digital-forensics)
   * [Digital Evidence](#Digital-Evidence)
   * [Linux CLI](#Linux-CLI)
   * [Steganography](#Steganography)
   * [Cracking ZIP Files](#Cracking-ZIP-Files)
   * [Course Capstone](#Course-Capstone)
-2. [Introduction to OSINT](#Introduction-to-OSINT)
-3. [Introduction to Vulnerability Management](#Introduction-to-Vulnerability-Management)
-4. [Introduction to Threat Hunting](#Introduction-to-Threat-Hunting)
-5. [Introduction to Network Analysis](#Introduction-to-Network-Analysis)
-6. [Introduction to Dark Web Operations](#Introduction-to-Dark-Web-Operations)
+* [Introduction to OSINT](#Introduction-to-OSINT)
+* [Introduction to Vulnerability Management](#Introduction-to-Vulnerability-Management)
+* [Introduction to Threat Hunting](#Introduction-to-Threat-Hunting)
+* [Introduction to Network Analysis](#Introduction-to-Network-Analysis)
+* [Introduction to Dark Web Operations](#Introduction-to-Dark-Web-Operations)
 
 
 
