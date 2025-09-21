@@ -1,6 +1,50 @@
-* [Identity and Access Management Simulation](#identity-and-access-management-simulation)
-* [Master Card Phishing](#master-card-phishing)
-* [Cybersecurity Consultants](#cybersecurity-consultants)
+# [Identity and Access Management Simulation](#identity-and-access-management-simulation)
+# [Master Card Phishing](#master-card-phishing)
+# [Cybersecurity Consultants](#cybersecurity-consultants)
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+------
+---
+---
+---
+---
+---
+---
+------
+---
+---
+---
+---
+---
+---
+------
+---
+---
+---
+---
+---
+---
+------
+---
+---
+---
+---
+---
+---
+---
 
 
 # Identity and Access Management Simulation
@@ -272,7 +316,7 @@ If 100 people received the email and 50 people opened it - the email open rate w
 ---
 
 
-## Cybersecurity Consultants
+# Cybersecurity Consultants
 
 
 ### Cyberattack Report: APT34 (OilRig) Breach
@@ -494,5 +538,12 @@ We recommend the immediate implementation of the following strategic controls to
 * **Human:** Launch a mandatory and realistic cybersecurity training program for all employees, including regular phishing simulations.
 * **Access:** Adopt a **Zero Trust** security model to ensure all access is verified, regardless of the user's location or network.
 
+
+
+<img width="1782" height="316" alt="image" src="https://github.com/user-attachments/assets/30b28c53-eea7-411a-b886-459d0265f580" />
+
+<img width="1793" height="186" alt="image" src="https://github.com/user-attachments/assets/cc0bca6c-74f5-4e90-95df-387dfe280179" />
+
+<img width="1780" height="252" alt="image" src="https://github.com/user-attachments/assets/630d7b9e-d02d-4645-a976-f8b48e562f58" />
 
 
