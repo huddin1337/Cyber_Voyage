@@ -19,8 +19,11 @@
 # **Comming Soon**
 
 ## 🧑‍🎓| College Degree
-* Master Degrees
-* Master Degrees
+* MS Information Assurance & Cybersecurity
+https://www.shsu.edu/academics/majors-programs/information-assurance-cybersecurity
+
+* Digital Forensics certification
+https://www.shsu.edu/academics/majors-programs/digital-forensics-ms
 
 ## 🏆| Certifications
 
