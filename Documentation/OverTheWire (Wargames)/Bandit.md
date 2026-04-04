@@ -214,15 +214,15 @@ Executing this command will display the single line containing the password, all
 
 ## Level 10
 ... some content ...
-<details> <summary>Answer</summary>  </details> 
+<details> <summary>Answer</summary> 7k16JArUVv5LxVuJfsSVdbbtaHGlw9D4 </details> 
 
 ## Level 11
 ... some content ...
-<details> <summary>Answer</summary>  </details> 
+<details> <summary>Answer</summary> 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4 </details> 
 
 ## Level 12
 ... some content ...
-<details> <summary>Answer</summary>  </details> 
+<details> <summary>Answer</summary> FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn </details> 
 
 ## Level 13
 ... some content ...
