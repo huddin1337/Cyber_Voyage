@@ -226,19 +226,19 @@ Executing this command will display the single line containing the password, all
 
 ## Level 13
 ... some content ...
-<details> <summary>Answer</summary>  </details> 
+<details> <summary>Answer</summary> FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn </details> 
 
 ## Level 14
 ... some content ...
-<details> <summary>Answer</summary>  </details> 
+<details> <summary>Answer</summary> MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS  </details> 
 
 ## Level 15
 ... some content ...
-<details> <summary>Answer</summary>  </details> 
+<details> <summary>Answer</summary> 8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo  </details> 
 
 ## Level 16
 ... some content ...
-<details> <summary>Answer</summary>  </details> 
+<details> <summary>Answer</summary> kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx  </details> 
 
 ## Level 17
 ... some content ...
@@ -246,11 +246,11 @@ Executing this command will display the single line containing the password, all
 
 ## Level 18
 ... some content ...
-<details> <summary>Answer</summary>  </details> 
+<details> <summary>Answer</summary> x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO  </details> 
 
 ## Level 19
 ... some content ...
-<details> <summary>Answer</summary>  </details> 
+<details> <summary>Answer</summary> cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8 </details> 
 
 ## Level 20
 ... some content ...
