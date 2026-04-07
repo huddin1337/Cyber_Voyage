@@ -254,7 +254,7 @@ Executing this command will display the single line containing the password, all
 
 ## Level 20
 ... some content ...
-<details> <summary>Answer</summary>  </details> 
+<details> <summary>Answer</summary> 0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO </details> 
 
 ## Level 21
 ... some content ...
