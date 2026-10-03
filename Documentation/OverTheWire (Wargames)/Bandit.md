@@ -4,42 +4,24 @@ Welcome to my documentation of the OverTheWire War Games: Bandit edition! This d
 
 Im trying to make a table of content for my github text md file help me expand this table of content from level 1 through level 34:
 
+# New Keys Dump Oct 2026 
 ## Table of Contents
-* [Level 0](#level-0)
-* [Level 1](#level-1)
-* [Level 2](#level-2)
-* [Level 3](#level-3)
-* [Level 4](#level-4)
-* [Level 5](#level-5)
-* [Level 6](#level-6)
-* [Level 7](#level-7)
-* [Level 8](#level-8)
-* [Level 9](#level-9)
-* [Level 10](#level-10)
-* [Level 11](#level-11)
-* [Level 12](#level-12)
-* [Level 13](#level-13)
-* [Level 14](#level-14)
-* [Level 15](#level-15)
-* [Level 16](#level-16)
-* [Level 17](#level-17)
-* [Level 18](#level-18)
-* [Level 19](#level-19)
-* [Level 20](#level-20)
-* [Level 21](#level-21)
-* [Level 22](#level-22)
-* [Level 23](#level-23)
-* [Level 24](#level-24)
-* [Level 25](#level-25)
-* [Level 26](#level-26)
-* [Level 27](#level-27)
-* [Level 28](#level-28)
-* [Level 29](#level-29)
-* [Level 30](#level-30)
-* [Level 31](#level-31)
-* [Level 32](#level-32)
-* [Level 33](#level-33)
-* [Level 34](#level-34)
+
+| Level | Password | Level | Password | Level | Password |
+| :---: | :--- | :---: | :--- | :---: | :--- |
+| [Level 1](#level-1) | `6y2kwnwK6grgvwvpvLaa2T1cpFEKOhNR` | [Level 13](#level-13) | `qQYQiHOBPR8zR61qxYqX45quvihF2uzk` | [Level 25](#level-25) | |
+| [Level 2](#level-2) | `PK8fYLZg2hnHSz83plBL1iEPKdD3QToB` | [Level 14](#level-14) | | [Level 26](#level-26) | |
+| [Level 3](#level-3) | `7ZZ2LFrykP2zEyvBl4m3clcL7tGYJPME` | [Level 15](#level-15) | | [Level 27](#level-27) | |
+| [Level 4](#level-4) | `xzTXq1rDJQVVAzdv5cHq1TQytTWufAMq` | [Level 16](#level-16) | | [Level 28](#level-28) | |
+| [Level 5](#level-5) | `6C7h9GD8M6ai5nr7wo1RonrzFjj9yIrG` | [Level 17](#level-17) | | [Level 29](#level-29) | |
+| [Level 6](#level-6) | `pXa26xhMWaC2SvDotA4r9EgZkulOeSBW` | [Level 18](#level-18) | | [Level 30](#level-30) | |
+| [Level 7](#level-7) | `Bmnnvf82KzQlfxgAI2d1zYbr1u9pr3E3` | [Level 19](#level-19) | | [Level 31](#level-31) | |
+| [Level 8](#level-8) | `VR1ljMayciFxbnUokuQmJFw6QC9VKtub` | [Level 20](#level-20) | | [Level 32](#level-32) | |
+| [Level 9](#level-9) | `EjmOSvuAu7sGAHqHVcBDPirRe9T03kxl` | [Level 21](#level-21) | | [Level 33](#level-33) | |
+| [Level 10](#level-10) | `B0s2khmbT9u0geKuOoVGW3JZKhndE3BG` | [Level 22](#level-22) | | [Level 34](#level-34) | |
+| [Level 11](#level-11) | `pYfOY6HwUsDj5rL9UvyhU7MCmv8vN5Ro` | [Level 23](#level-23) | | | |
+| [Level 12](#level-12) | `GROozWPO8QyN0mGrjUkID0WCYkZiQxrN` | [Level 24](#level-24) | | | |
+
 
 ---
 
@@ -399,23 +381,7 @@ gzip -d / bzip2 -d / tar -xf: Archive extraction tools.
 <details> <summary>Answer</summary>  </details> 
 
 
-# New Keys Dump Oct 2026 
 
-
-| Level | Password | Level | Password | Level | Password |
-| --- | --- | --- | --- | --- | --- |
-| **1** | `6y2kwnwK6grgvwvpvLaa2T1cpFEKOhNR` | **13** | `qQYQiHOBPR8zR61qxYqX45quvihF2uzk` | **25** |  |
-| **2** | `PK8fYLZg2hnHSz83plBL1iEPKdD3QToB` | **14** |  | **26** |  |
-| **3** | `7ZZ2LFrykP2zEyvBl4m3clcL7tGYJPME` | **15** |  | **27** |  |
-| **4** | `xzTXq1rDJQVVAzdv5cHq1TQytTWufAMq` | **16** |  | **28** |  |
-| **5** | `6C7h9GD8M6ai5nr7wo1RonrzFjj9yIrG` | **17** |  | **29** |  |
-| **6** | `pXa26xhMWaC2SvDotA4r9EgZkulOeSBW` | **18** |  | **30** |  |
-| **7** | `Bmnnvf82KzQlfxgAI2d1zYbr1u9pr3E3` | **19** |  | **31** |  |
-| **8** | `VR1ljMayciFxbnUokuQmJFw6QC9VKtub` | **20** |  | **32** |  |
-| **9** | `EjmOSvuAu7sGAHqHVcBDPirRe9T03kxl` | **21** |  | **33** |  |
-| **10** | `B0s2khmbT9u0geKuOoVGW3JZKhndE3BG` | **22** |  | **34** |  |
-| **11** | `pYfOY6HwUsDj5rL9UvyhU7MCmv8vN5Ro` | **23** |  |  |  |
-| **12** | `GROozWPO8QyN0mGrjUkID0WCYkZiQxrN` | **24** |  |  |  |
 
 
 
