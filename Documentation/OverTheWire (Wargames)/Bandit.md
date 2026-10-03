@@ -205,23 +205,109 @@ Executing this command will display the single line containing the password, all
 <details> <summary>Answer</summary> dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc </details> 
 
 ## Level 8
-... some content ...
-<details> <summary>Answer</summary>  </details> 
+
+### Level Goal
+The password for the next level is stored in the `data.txt` file and is the only line of text that occurs **only once**.
+
+### Solution
+<img width="392" height="121" alt="image" src="https://github.com/user-attachments/assets/8bc490ee-3522-4cde-b2d1-066c8981398a" />
+
+
+1. **Inspect the file**: Running `cat data.txt` outputs a large number of lines containing random characters, making it impossible to find the unique line manually.
+
+2. **Sort and filter for unique lines**: The `uniq` command in Linux requires input to be sorted first so that identical lines are adjacent. By sorting `data.txt` and piping it to `uniq -u`, we can extract only the line that occurs exactly once:
+
+```bash
+cat data.txt | sort | uniq -u
+```
+<details> <summary>VR1ljMayciFxbnUokuQmJFw6QC9VKtub</summary>  </details> 
 
 ## Level 9
-... some content ...
-<details> <summary>Answer</summary>  </details> 
+
+### Level Goal
+The password for the next level is stored in the file `data.txt` in one of the few human-readable strings, preceded by several `=` characters.
+
+### Solution
+<img width="412" height="152" alt="image" src="https://github.com/user-attachments/assets/a9fce96e-c162-429a-8f5b-0e4ae4159cd0" />
+
+1. **Inspect the file**: Running `cat data.txt` shows that the file contains binary or non-human-readable data, which scrambles the terminal output when printed directly.
+
+2. **Extract human-readable strings**: The `strings` command extracts sequences of printable characters from binary files. Piping the output to `grep` allows filtering for lines containing the expected `=` prefix:
+
+```bash
+strings data.txt | grep "=="
+```
+<details> <summary>EjmOSvuAu7sGAHqHVcBDPirRe9T03kxl</summary>  </details> 
 
 ## Level 10
-... some content ...
+
+### Level Goal
+The password for the next level is stored in the file `data.txt`, which contains base64 encoded data.
+
+### Solution
+<img width="406" height="43" alt="{CCD15154-A2D8-4D82-8228-BCB12106A0D8}" src="https://github.com/user-attachments/assets/1d89338e-a61d-45ce-a1c5-5f02437ea0ce" />
+
+1. **Inspect the file**: Opening or inspecting `data.txt` shows a single block of base64-encoded text, which is an ASCII text format used to represent binary data.
+
+2. **Decode the data**: The `base64` utility with the `-d` (or `--decode`) flag decodes base64-encoded data back into readable plaintext:
+
+```bash
+base64 -d data.txt
+```
 <details> <summary>Answer</summary> 7k16JArUVv5LxVuJfsSVdbbtaHGlw9D4 </details> 
 
 ## Level 11
-... some content ...
+
+
+### Level Goal
+The password for the next level is stored in the file `data.txt`, where all lowercase (a-z) and uppercase (A-Z) letters have been rotated by 13 positions (ROT13 cipher).
+
+### Solution
+<img width="483" height="73" alt="{B9768EDD-01FB-4EEA-9C7D-13DF0A96ED11}" src="https://github.com/user-attachments/assets/836b73f5-b227-41da-850e-84d01e43039c" />
+
+1. **Inspect the cipher**: ROT13 is a simple substitution cipher that replaces a letter with the 13th letter after it in the alphabet. Because there are 26 letters in the Latin alphabet, applying the same transformation again decrypts the message.
+
+2. **Translate characters**: The `tr` (translate) command can map sets of characters to a target set. By specifying the input set as `'A-Za-z'` and mapping it to `'N-ZA-Mn-za-m'`, every character is shifted 13 positions back to its original state:
+
+```bash
+cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+```
 <details> <summary>Answer</summary> 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4 </details> 
 
 ## Level 12
-... some content ...
+### Level Goal
+The password for the next level is stored in the file `data.txt`, which is a hexdump of a file that has been repeatedly compressed (using formats like `gzip`, `bzip2`, and `tar`).
+
+### Solution
+<img width="606" height="276" alt="image" src="https://github.com/user-attachments/assets/e3efb9dc-44a9-4092-aabf-755c12bbb6a4" />
+
+```
+# Set up workspace
+mkdir /tmp/workspace && cp data.txt /tmp/workspace/ && cd /tmp/workspace
+
+# Convert hexdump to binary
+xxd -r data.txt > data.bin
+
+# Decompress each layer step-by-step
+mv data.bin data2.gz && gzip -d data2.gz
+mv data2 data3.bz2 && bzip2 -d data3.bz2
+mv data3 data4.gz && gzip -d data4.gz
+mv data4 data5.tar && tar -xf data5.tar
+mv data5.bin data6.tar && tar -xf data6.tar
+mv data6.bin data7.bz2 && bzip2 -d data7.bz2
+mv data7 data8.tar && tar -xf data8.tar
+mv data8.bin data9.gz && gzip -d data9.gz
+
+# Read password
+cat data9
+```
+Commands Used
+xxd -r: Reverses hexdump to binary.
+
+file: Identifies true file types by header signatures.
+
+gzip -d / bzip2 -d / tar -xf: Archive extraction tools.
+
 <details> <summary>Answer</summary> FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn </details> 
 
 ## Level 13
@@ -311,6 +397,25 @@ Executing this command will display the single line containing the password, all
 ## Level-34
 ... some content ...
 <details> <summary>Answer</summary>  </details> 
+
+
+# New Keys Dump Oct 2026 
+
+
+| Level | Password | Level | Password | Level | Password |
+| --- | --- | --- | --- | --- | --- |
+| **1** | `6y2kwnwK6grgvwvpvLaa2T1cpFEKOhNR` | **13** | `qQYQiHOBPR8zR61qxYqX45quvihF2uzk` | **25** |  |
+| **2** | `PK8fYLZg2hnHSz83plBL1iEPKdD3QToB` | **14** |  | **26** |  |
+| **3** | `7ZZ2LFrykP2zEyvBl4m3clcL7tGYJPME` | **15** |  | **27** |  |
+| **4** | `xzTXq1rDJQVVAzdv5cHq1TQytTWufAMq` | **16** |  | **28** |  |
+| **5** | `6C7h9GD8M6ai5nr7wo1RonrzFjj9yIrG` | **17** |  | **29** |  |
+| **6** | `pXa26xhMWaC2SvDotA4r9EgZkulOeSBW` | **18** |  | **30** |  |
+| **7** | `Bmnnvf82KzQlfxgAI2d1zYbr1u9pr3E3` | **19** |  | **31** |  |
+| **8** | `VR1ljMayciFxbnUokuQmJFw6QC9VKtub` | **20** |  | **32** |  |
+| **9** | `EjmOSvuAu7sGAHqHVcBDPirRe9T03kxl` | **21** |  | **33** |  |
+| **10** | `B0s2khmbT9u0geKuOoVGW3JZKhndE3BG` | **22** |  | **34** |  |
+| **11** | `pYfOY6HwUsDj5rL9UvyhU7MCmv8vN5Ro` | **23** |  |  |  |
+| **12** | `GROozWPO8QyN0mGrjUkID0WCYkZiQxrN` | **24** |  |  |  |
 
 
 
